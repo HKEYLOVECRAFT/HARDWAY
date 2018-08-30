@@ -1,4 +1,4 @@
-# Unignore binary files
+# Unignore binary files (removes extensionless files "ex1, ex2,...")
 *
 !/**/
 !*.*
