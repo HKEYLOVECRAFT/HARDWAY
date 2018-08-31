@@ -3,6 +3,9 @@
 !/**/
 !*.*
 
+#ignore vgcore
+vgcore.*
+
 # Prerequisites
 *.d
 
