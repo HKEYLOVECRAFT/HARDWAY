@@ -3,6 +3,7 @@
 int main(int argc, char *argv[])
 {
     int numbers[4] = {0};
+    //Here the NULL character doesn't get printed. It represents "empty"
     char name[4] = {'a', 'a', 'a', '\0'};
 
     //first, print them out raw
