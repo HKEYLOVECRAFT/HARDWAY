@@ -8,8 +8,11 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/a.out",
-            "args": [],
+            "program": "${workspaceFolder}/ex14",
+            "args": [
+                "ONE TWO",
+                "three"
+            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
