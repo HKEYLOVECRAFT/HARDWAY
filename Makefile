@@ -1,7 +1,10 @@
-CFLAGS=-Wall -g
-EXES=ex1 ex3 ex4 ex5 ex6 ex7 ex8 ex9 ex10 ex11 ex12 ex13 ex13lower ex14
+SRCS = $(wildcard *.c)
 
-all: $(EXES)
+PROGS = $(patsubst %.c,%,$(SRCS))
 
-clean:
-	rm -f $(EXES)
+all: $(PROGS)
+
+%: %.c
+        $(CC) $(CFLAGS) -o $@ $<
+clean: 
+        rm -f $(PROGS)
